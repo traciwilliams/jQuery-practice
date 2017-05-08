@@ -29,9 +29,12 @@ $(document).ready (function(){
 	$("a").click(function(event){
 		//alert("As you can see, the link no longer took you to jquery.com");
 		event.preventDefault(); //if you take this out then the link will take you to jquery.com
-		$(this).hide("slow");
+		$(this).hide("slow"); //makes a link slowly disappear when clicked
+
 	});
 
 	//$("a").removeClass("test");
 
 });
+
+$( "h1" ).html( "hello world" );
