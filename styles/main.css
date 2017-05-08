@@ -12,3 +12,7 @@ button {
 img {
 	display: none;
 }
+
+a.test {
+	font-weight: bold;
+}

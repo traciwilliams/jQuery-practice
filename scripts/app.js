@@ -1,5 +1,5 @@
 window.onload=function() {
-	console.log("javascript file loaded");
+	alert ("javascript file loaded");
 };
 
 $("li").on("click", function() {
@@ -23,4 +23,15 @@ $("#mo").on("mouseout", function() {
 
 $("input").on("change", function(){
 	$("#thisBox").html("Thank you! You have opted in!");
+});
+
+$(document).ready (function(){
+	$("a").click(function(event){
+		//alert("As you can see, the link no longer took you to jquery.com");
+		event.preventDefault(); //if you take this out then the link will take you to jquery.com
+		$(this).hide("slow");
+	});
+
+	//$("a").removeClass("test");
+
 });
